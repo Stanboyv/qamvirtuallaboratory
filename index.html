@@ -464,7 +464,9 @@ Where Q(x) is the tail probability of a standard normal distribution.
   This simulation primarily demonstrates <strong>QAM signal representation and constellation behavior</strong>.
   BER and SER are shown as performance indicators to observe the effect of noise, not as exact analytical results.
 </p>
-
+<p class="small-muted">
+  All plots are interactive. Signals can be individually shown or hidden using plot legends for focused analysis.
+</p>
 
    <div class="simulation-layout">
 
@@ -541,6 +543,9 @@ At high SNR, use ≥10,000 bits to observe reliable BER values.</div>
               <div class="legend-item"><div class="legend-dot red"></div><div class="small">Received</div></div>
             </div>
           </div>
+          <div class="small-muted" style="margin-top:6px">
+  Tip: Click legend items (Ideal / Transmitted / Received) to hide or show signals.
+</div>
           <div id="constellationPlot" style="height:360px;margin-top:8px"></div>
         </div>
 
@@ -554,6 +559,10 @@ At high SNR, use ≥10,000 bits to observe reliable BER values.</div>
               <button id="zoomReset" class="btn" style="background:#2f3ea3;padding:6px 10px">Reset Zoom</button>
             </div>
           </div>
+          <div class="small-muted" style="margin-top:6px">
+  Tip: Click legend items (Clean QAM / Noisy) waveform.
+  This helps isolate the effect of noise in the time domain.
+</div>
           <div id="waveformPlot" style="height:320px;margin-top:8px"></div>
         </div>
 
